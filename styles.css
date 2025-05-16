@@ -1,38 +1,59 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: linear-gradient(135deg, #e6f0fa, #cddff3);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .card {
-    padding: 40px 30px;
-    max-width: 600px;
-    text-align: center;
-  }
-  
-  .card h1 {
-    color: #2a7db8;
-    margin-bottom: 20px;
-  }
-  
-  .card p {
-    font-size: 18px;
-    color: #444;
-    line-height: 1.6;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #e6f0fa, #cddff3);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-  .foto {
+.card {
+  background: white;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h1 {
+  color: #2a7db8;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.card p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.foto {
   width: 100%;
   max-width: 300px;
   height: auto;
   border-radius: 12px;
-  margin: 25px 0;
+  margin: 25px auto 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: block;
 }
-  
-  
+
+/* Responsivo para telas pequenas */
+@media (max-width: 480px) {
+  .card {
+    padding: 25px 20px;
+  }
+
+  .card h1 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+}
