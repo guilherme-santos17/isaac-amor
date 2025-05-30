@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.convite {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 16px;
+}
+
+.convite-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.qrcode {
+  position: absolute;
+  bottom: 280px; /* ajustar a posição do QR */
+  right: 210px;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Responsividade */
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    max-width: 210mm; /* largura da folha A4 */
+    margin: 0 auto;
+  }
+}
+
+/* Impressão */
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10mm;
+    height: 297mm;
+    padding: 10mm;
+    box-sizing: border-box;
+  }
+
+  .convite {
+    page-break-inside: avoid;
+    box-shadow: none;
+  }
+}
