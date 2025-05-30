@@ -28,10 +28,10 @@ body {
 
 #qrcode {
   position: absolute;
-  bottom: 20px; /* você pode ajustar para posicionar melhor */
+  bottom: 125px; /* você pode ajustar para posicionar melhor */
   right: 20px;
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
 }
 
