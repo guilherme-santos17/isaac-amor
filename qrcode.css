@@ -28,7 +28,7 @@ body {
 
 #qrcode {
   position: absolute;
-  bottom: 125px; /* você pode ajustar para posicionar melhor */
+  bottom: 125px; /* ajustar o posicionamento do QR Code */
   right: 20px;
   width: 90px;
   height: 90px;
